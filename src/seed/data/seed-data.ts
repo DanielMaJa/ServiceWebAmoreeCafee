@@ -75,16 +75,20 @@ export const initialData: SeedData = {
     ],
     categorias: [
         {
-            nombre: 'desayunos'
+            nombre: 'desayunos',
+            imagenUrl: 'desayunos.png'
         },
         {
-            nombre: 'bebidas'
+            nombre: 'bebidas',
+            imagenUrl: 'bebidas.png'
         },
         {
-            nombre: 'postres'
+            nombre: 'postres',
+            imagenUrl: 'postres.png'
         },
         {
-            nombre: 'jugos'
+            nombre: 'jugos',
+            imagenUrl: 'jugos.png'
         }
     ],
 
@@ -95,21 +99,24 @@ export const initialData: SeedData = {
             descripcion: 'Ensalada de frutas que contiene arándanos, trozos de fresa, papaya, durazno y yogurt griego ',
             precio: 10,
             cantidad: 50,
-            option: 'desayunos'
+            option: 'desayunos',
+            imagenUrl: '475bc55a-9cd9-48b9-b039-e256b2256dbe.png'
         },
         {
             nombre: 'yogurt con cereales y frutas',
             descripcion: 'Yogurt con cereales naturales y frutillas que contiene trigo, arándanos, frambuesas y semillas de chia',
             precio: 12,
             cantidad: 20,
-            option: 'desayunos'
+            option: 'desayunos',
+            imagenUrl: '957af0c9-b364-4da4-b539-82f51ea0ca6f.png'
         },
         {
             nombre: 'royal egg',
             descripcion: 'Desayuno tradicional que contiene huevos fritos, 2 tostadas a la francesa, tiras de tocino frito y tomates cherry ',
             precio: 5,
             cantidad: 30,
-            option: 'desayunos'
+            option: 'desayunos',
+            imagenUrl: '9700041a-df9b-4f42-a1b9-4a506bbd59a4.png'
         },
 
 
@@ -119,21 +126,24 @@ export const initialData: SeedData = {
             descripcion: 'Café caliente de Oxapampa',
             precio: 10,
             cantidad: 50,
-            option: 'bebidas'
+            option: 'bebidas',
+            imagenUrl: 'eabaed87-86d3-4ad1-bce9-48fada10d2a0.png'
         },
         {
             nombre: 'frappuccinno',
             descripcion: 'Mezcla de hielo y café con otros ingredientes',
             precio: 12,
             cantidad: 20,
-            option: 'bebidas'
+            option: 'bebidas',
+            imagenUrl: 'a7079715-35ec-4b48-a655-4a00eda5036b.png'
         },
         {
             nombre: 'MILKSHAKE',
             descripcion: 'Batido elaborado a base de leche o helado con diferentes sabores(fresa, chocolate, vainilla)',
             precio: 5,
             cantidad: 30,
-            option: 'bebidas'
+            option: 'bebidas',
+            imagenUrl: 'c6e776ed-cbf4-44e5-8c28-202d3cbdbff9.png'
         },
 
 
@@ -143,21 +153,24 @@ export const initialData: SeedData = {
             descripcion: 'Jugo hecho a base de naranjas ',
             precio: 10,
             cantidad: 50,
-            option: 'jugos'
+            option: 'jugos',
+            imagenUrl: '2b3667a0-872d-4b52-9fc5-5d2964212a7a.png'
         },
         {
             nombre: 'FRESA',
             descripcion: 'Jugo hecho a base de fresas',
             precio: 12,
             cantidad: 20,
-            option: 'jugos'
+            option: 'jugos',
+            imagenUrl: 'b9c33e9f-ec4b-4bf5-b569-0e9acbcde774.png'
         },
         {
             nombre: 'PAPAYA',
             descripcion: 'Jugo hecho a base de papaya',
             precio: 5,
             cantidad: 30,
-            option: 'jugos'
+            option: 'jugos',
+            imagenUrl: '2c6975fb-063b-4dee-bc4d-95375dd6474b.png'
         },
 
 
@@ -167,21 +180,24 @@ export const initialData: SeedData = {
             descripcion: 'Torta de chocolate con canela y relleno de mermelada',
             precio: 10,
             cantidad: 50,
-            option: 'postres'
+            option: 'postres',
+            imagenUrl: 'f7cc444a-6243-43ae-a83d-a1de8d0353be.png'
         },
         {
             nombre: 'PIE DE LIMON',
             descripcion: 'Pie hecho a base de limon ',
             precio: 12,
             cantidad: 20,
-            option: 'postres'
+            option: 'postres',
+            imagenUrl: '70d1a7de-0b1d-4fca-8915-e2fca4ab9a4f.png'
         },
         {
             nombre: 'TARTALETA',
             descripcion: 'Tartaleta clasica con crema pastelera de relleno',
             precio: 5,
             cantidad: 30,
-            option: 'postres'
+            option: 'postres',
+            imagenUrl: '3cba39bb-8886-4281-b341-40d07c3cf7c3.png'
         },
 
 
