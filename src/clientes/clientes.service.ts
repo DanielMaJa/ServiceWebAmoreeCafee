@@ -7,6 +7,7 @@ import { CreateClienteDto } from './dto/create-cliente.dto';
 import { UpdateClienteDto } from './dto/update-cliente.dto';
 import { Cliente } from './entities/cliente.entity';
 import { validate as isUUID } from 'uuid';
+import { Logger, ValidationPipe } from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
 
 @Injectable()
@@ -23,6 +24,7 @@ export class ClientesService {
 
   async create(createClienteDto: CreateClienteDto) {
     const { password, ...clienteData } = createClienteDto
+    const logger = new Logger('Booststrap')
     logger.log(${createClienteDto})
     try {
       const cliente = this.clienteRepository.create({
