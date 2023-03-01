@@ -13,19 +13,20 @@ import * as bcrypt from 'bcrypt';
 @Injectable()
 export class ClientesService {
   private readonly logger = new Logger('ClienteService');
+  
 
   constructor(
 
     @InjectRepository(Cliente)
     private readonly clienteRepository: Repository<Cliente>,
     private readonly authService: AuthService,
+    
 
-  ) { }
+  ) { const logger_g = new Logger('Booststrap') }
 
   async create(createClienteDto: CreateClienteDto) {
     const { password, ...clienteData } = createClienteDto
-    const logger = new Logger('Booststrap')
-    logger.log(${createClienteDto})
+    logger_g.log(${createClienteDto})
     try {
       const cliente = this.clienteRepository.create({
         ...clienteData,
