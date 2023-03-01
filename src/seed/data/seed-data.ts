@@ -32,6 +32,7 @@ interface SeedProducto {
     precio: number;
     cantidad: number;
     option: string;
+    imagenUrl: string;
 }
 
 interface SeedComprobante {
