@@ -24,6 +24,7 @@ interface SeedMesa {
 
 interface SeedCategoria {
     nombre: string;
+    imagenUrl: string;
 }
 
 interface SeedProducto {
