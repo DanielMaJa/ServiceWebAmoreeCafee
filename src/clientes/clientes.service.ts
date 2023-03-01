@@ -23,7 +23,7 @@ export class ClientesService {
 
   async create(createClienteDto: CreateClienteDto) {
     const { password, ...clienteData } = createClienteDto
-
+    logger.log(${createClienteDto})
     try {
       const cliente = this.clienteRepository.create({
         ...clienteData,
