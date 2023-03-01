@@ -7,12 +7,11 @@ import { CreateClienteDto } from './dto/create-cliente.dto';
 import { UpdateClienteDto } from './dto/update-cliente.dto';
 import { Cliente } from './entities/cliente.entity';
 import { validate as isUUID } from 'uuid';
-import { Logger as LoggerCliente, ValidationPipe } from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
 
 @Injectable()
 export class ClientesService {
-  private readonly logger = new LoggerCliente('ClienteService');
+  private readonly logger = new Logger('ClienteService');
   
 
   constructor(
@@ -22,11 +21,11 @@ export class ClientesService {
     private readonly authService: AuthService,
     
 
-  ) { const logger_g = new Logger('Booststrap') }
+  ) { }
 
   async create(createClienteDto: CreateClienteDto) {
     const { password, ...clienteData } = createClienteDto
-    logger_g.log(${createClienteDto})
+    this.logger.log("Create New Cliente: "+createClienteDto.correo)
     try {
       const cliente = this.clienteRepository.create({
         ...clienteData,
