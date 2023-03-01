@@ -7,12 +7,12 @@ import { CreateClienteDto } from './dto/create-cliente.dto';
 import { UpdateClienteDto } from './dto/update-cliente.dto';
 import { Cliente } from './entities/cliente.entity';
 import { validate as isUUID } from 'uuid';
-import { Logger, ValidationPipe } from '@nestjs/common';
+import { Logger as LoggerCliente, ValidationPipe } from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
 
 @Injectable()
 export class ClientesService {
-  private readonly logger = new Logger('ClienteService');
+  private readonly logger = new LoggerCliente('ClienteService');
   
 
   constructor(
